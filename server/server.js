@@ -1,10 +1,10 @@
 const express = require("express");
-// import dependency -- Apollo Server
+// import ApolloServer
 const { ApolloServer } = require("apollo-server-express");
 const { authMiddleware } = require("./utils/auth");
 const path = require("path");
 
-// import typeDefs and resolvers
+// import our typeDefs and resolvers
 const { typeDefs, resolvers } = require("./schemas");
 const db = require("./config/connection");
 
@@ -12,18 +12,20 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 
 const startServer = async () => {
+  // create a new Apollo server and pass in our schema data
   const server = new ApolloServer({
     typeDefs,
     resolvers,
     context: authMiddleware,
   });
-  // start the apollo server
+
+  // Start the Apollo server
   await server.start();
 
-  // integrate apollo server as middleware
+  // integrate our Apollo server with the Express application as middleware
   server.applyMiddleware({ app });
 
-  // add a console log to guide us to playground
+  // log where we can go to test our GQL API
   console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
 };
 
