@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Form, Button, Alert } from "react-bootstrap";
 
+// import { loginUser } from '../utils/API'; -- comment out old API  for reference
 import Auth from "../utils/auth";
 
 // import dependencies - new to app
@@ -40,9 +41,9 @@ const LoginForm = () => {
         throw new Error("something went wrong!");
       }
 
-      Auth.login(data.addUser.token);
-    } catch (err) {
-      console.error(err);
+      Auth.login(data.login.token);
+    } catch (e) {
+      console.error(e);
       setShowAlert(true);
     }
 

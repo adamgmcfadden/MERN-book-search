@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Form, Button, Alert } from "react-bootstrap";
 
+// import { createUser } from '../utils/API'; -- comment out and leave for reference - old API
 import Auth from "../utils/auth";
 
+// import new dependencies -- ADD_USER and useMutation
 import { useMutation } from "@apollo/client";
 import { ADD_USER } from "../utils/mutations";
 
@@ -47,8 +49,8 @@ const SignupForm = () => {
       }
 
       Auth.login(data.addUser.token);
-    } catch (err) {
-      console.error(err);
+    } catch (e) {
+      console.error(e);
       setShowAlert(true);
     }
 
