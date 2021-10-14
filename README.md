@@ -35,9 +35,11 @@ To use the app, click on the website link above. A user can search books using t
 #### Screenshots 
 
 *Book Search
-![Screenshot 1](https://user-images.githubusercontent.com/83710803/137380954-5a7a42be-0683-4c2f-be00-115d8b5ae840.png)
+
+![Screenshot 1](https://user-images.githubusercontent.com/83710803/137382095-d9092324-65d6-4260-8f75-b7e80205f933.png)
 
 *Books Saved
+
 ![Screenshot 2](https://user-images.githubusercontent.com/83710803/137380955-2f9cd83d-2bc8-4993-b43b-fbc0750b3710.png)
 
 ## Credits
