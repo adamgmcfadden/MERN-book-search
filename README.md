@@ -10,7 +10,7 @@
 
 My app took a fully function Google Books API search engine built with RESTful API and refactored it to be a GraphQL API with Apollo Server. The app was built with the MERN stack. 
 
-## Languages Used: 
+#### Languages Used: 
 
 ![Language](https://img.shields.io/badge/HTML-green.svg "Language Badge")
 ![Language](https://img.shields.io/badge/CSS-blue.svg "Language Badge")
