@@ -8,7 +8,7 @@
 
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg "License Badge")
 
-My app took a fully function Google Books API search engine built with RESTful API and refactored it to be a GraphQL API with Apollo Server. The app was built with the MERN stack. 
+My app took a fully functional Google Books API search engine built with RESTful API and refactored it to be a GraphQL API with Apollo Server. The app was built with the MERN stack. 
 
 #### Languages Used: 
 
